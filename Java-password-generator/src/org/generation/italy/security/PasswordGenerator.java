@@ -9,15 +9,28 @@ public class PasswordGenerator {
 		
 		Scanner sc = new Scanner(System.in);
 		
+		System.out.print("Name: ");
 		String name = sc.nextLine();
+		
+		System.out.print("LastName: ");
 		String lastName = sc.nextLine();
+		
+		System.out.print("FavouriteColor: ");
 		String favouriteColor = sc.nextLine();
 		
-		 int day = sc.nextInt();
-		 int month = sc.nextInt();
-		 int year = sc.nextInt();
+		System.out.print("Day: ");
+		int day = sc.nextInt();
+		 
+	    System.out.print("Month: ");
+		int month = sc.nextInt();
+		 
+		System.out.print("Year: ");
+		int year = sc.nextInt();
 		
-		 System.out.println(name  + lastName + favouriteColor + (day + month + year) );
+		int sum = day + month + year;
+		String password = name + "-" + lastName + "-" + favouriteColor + "-" + sum;
+		
+		System.out.println(password);
 		
 	}
 
